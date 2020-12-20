@@ -1,0 +1,35 @@
+[2020-12-18 00:30:21] production.ERROR: Please provide a valid cache path. {"exception":"[object] (InvalidArgumentException(code: 0): Please provide a valid cache path. at E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:36)
+[stacktrace]
+#0 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(88): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false)
+#1 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(826): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(712): Illuminate\\Container\\Container->build(Object(Closure))
+#3 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(796): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(781): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1354): Illuminate\\Foundation\\Application->make('blade.compiler')
+#7 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(150): Illuminate\\Container\\Container->offsetGet('blade.compiler')
+#8 [internal function]: Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}()
+#9 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\EngineResolver.php(55): call_user_func(Object(Closure))
+#10 E:\\www\\fybi\\vendor\\facade\\ignition\\src\\IgnitionServiceProvider.php(393): Illuminate\\View\\Engines\\EngineResolver->resolve('blade')
+#11 E:\\www\\fybi\\vendor\\facade\\ignition\\src\\IgnitionServiceProvider.php(125): Facade\\Ignition\\IgnitionServiceProvider->hasCustomViewEnginesRegistered()
+#12 E:\\www\\fybi\\vendor\\facade\\ignition\\src\\IgnitionServiceProvider.php(84): Facade\\Ignition\\IgnitionServiceProvider->registerViewEngines()
+#13 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Facade\\Ignition\\IgnitionServiceProvider->boot()
+#14 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#15 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#16 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(869): Illuminate\\Container\\Container->call(Array)
+#19 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(850): Illuminate\\Foundation\\Application->bootProvider(Object(Facade\\Ignition\\IgnitionServiceProvider))
+#20 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(Facade\\Ignition\\IgnitionServiceProvider), 14)
+#21 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(851): array_walk(Array, Object(Closure))
+#22 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#23 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#24 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#25 E:\\www\\fybi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#26 E:\\www\\fybi\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 {main}
+"} 
+[2020-12-18 00:49:21] local.ERROR: Cannot declare class CreateUsersTable, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class CreateUsersTable, because the name is already in use at E:\\www\\fybi\\database\\migrations\\2020_12_17_000023_create_users_table.php:13)
+[stacktrace]
+#0 {main}
+"} 

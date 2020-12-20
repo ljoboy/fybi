@@ -1,0 +1,40 @@
+<?php
+/**
+ * FILE UpdatePasswordRequest.php
+ *
+ * @author Dark Angel - jonathanyombo@gmail.com
+ * DATE 12/17/2020 - 8:21 PM
+ */
+namespace App\Http\Requests;
+
+use Gate;
+use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Response;
+use Illuminate\Validation\Rule;
+
+class UpdatePasswordRequest extends FormRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+        abort_if(Gate::denies('profile_password_edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+
+        return true;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        return [
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ];
+    }
+}
