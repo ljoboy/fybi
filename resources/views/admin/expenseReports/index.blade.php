@@ -10,7 +10,8 @@
                         <label class="control-label" for="y">{{ trans('global.year') }}</label>
                         <select name="y" id="y" class="form-control">
                             @foreach(array_combine(range(date("Y"), 1900), range(date("Y"), 1900)) as $year)
-                                <option value="{{ $year }}" @if($year===old('y', Request::get('y', date('Y')))) selected @endif>
+                                <option value="{{ $year }}"
+                                        @if($year===old('y', Request::get('y', date('Y')))) selected @endif>
                                     {{ $year }}
                                 </option>
                             @endforeach
@@ -20,7 +21,8 @@
                         <label class="control-label" for="m">{{ trans('global.month') }}</label>
                         <select name="m" for="m" class="form-control">
                             @foreach(cal_info(0)['months'] as $month)
-                                <option value="{{ $month }}" @if($month===old('m', Request::get('m', date('F')))) selected @endif>
+                                <option value="{{ $month }}"
+                                        @if($month===old('m', Request::get('m', date('F')))) selected @endif>
                                     {{ $month }}
                                 </option>
                             @endforeach
@@ -97,7 +99,7 @@
 
 @section('scripts')
     @parent
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.4.5/jquery-ui-timepicker-addon.min.js"></script>
+    <script src="{{asset('js/jquery-ui-timepicker-addon.min.js')}}"></script>
     <script>
         $('.date').datepicker({
             autoclose: true,

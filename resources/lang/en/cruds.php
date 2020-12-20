@@ -72,12 +72,12 @@ return [
         ],
     ],
     'assetManagement'         => [
-        'title'          => 'Gestion des biens',
-        'title_singular' => 'Gestion des bien',
+        'title'          => 'Assets management',
+        'title_singular' => 'Asset management',
     ],
     'assetCategory'           => [
-        'title'          => 'Catégories',
-        'title_singular' => 'Catégory',
+        'title'          => 'Categories',
+        'title_singular' => 'Category',
         'fields'         => [
             'id'                => 'ID',
             'id_helper'         => ' ',
@@ -92,8 +92,8 @@ return [
         ],
     ],
     'assetLocation'           => [
-        'title'          => 'Emplacements',
-        'title_singular' => 'Emplacement',
+        'title'          => 'Locations',
+        'title_singular' => 'Location',
         'fields'         => [
             'id'                => 'ID',
             'id_helper'         => ' ',
@@ -124,8 +124,8 @@ return [
         ],
     ],
     'asset'                   => [
-        'title'          => 'Avoirs',
-        'title_singular' => 'Avoir',
+        'title'          => 'Assets',
+        'title_singular' => 'Asset',
         'fields'         => [
             'id'                   => 'ID',
             'id_helper'            => ' ',
@@ -154,8 +154,8 @@ return [
         ],
     ],
     'assetsHistory'           => [
-        'title'          => 'Historique des biens',
-        'title_singular' => 'Historique des bien',
+        'title'          => 'Assets histories',
+        'title_singular' => 'Asset histories',
         'fields'         => [
             'id'                   => 'ID',
             'id_helper'            => ' ',
@@ -174,8 +174,8 @@ return [
         ],
     ],
     'taskManagement'          => [
-        'title'          => 'Gestion des tâches',
-        'title_singular' => 'Gestion des tâch',
+        'title'          => 'Tasks management',
+        'title_singular' => 'Task management',
     ],
     'taskStatus'              => [
         'title'          => 'Status',
@@ -194,8 +194,8 @@ return [
         ],
     ],
     'taskTag'                 => [
-        'title'          => 'Étiquettes',
-        'title_singular' => 'Étiquette',
+        'title'          => 'Tags',
+        'title_singular' => 'Tag',
         'fields'         => [
             'id'                => 'ID',
             'id_helper'         => ' ',
@@ -210,8 +210,8 @@ return [
         ],
     ],
     'task'                    => [
-        'title'          => 'Tâches',
-        'title_singular' => 'Tâch',
+        'title'          => 'Tasks',
+        'title_singular' => 'Task',
         'fields'         => [
             'id'                 => 'ID',
             'id_helper'          => ' ',
@@ -238,8 +238,8 @@ return [
         ],
     ],
     'tasksCalendar'           => [
-        'title'          => 'Calendrier',
-        'title_singular' => 'Calendrier',
+        'title'          => 'Calendar',
+        'title_singular' => 'calendar',
     ],
     'expenseManagement'       => [
         'title'          => 'Expense Management',

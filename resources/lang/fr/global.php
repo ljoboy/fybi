@@ -302,7 +302,7 @@ return [
     'test_answers'                         => 'Réponses des tests',
     'test_results'                         => 'Résultats des tests',
     'question_options'                     => 'Options des questions',
-    'tests'                                => 'Tests',
+    'tests'                                => 'Testes',
     'lessons'                              => 'Leçons',
     'courses'                              => 'Cours',
     'team-members'                         => 'Membres de l\'équipe',

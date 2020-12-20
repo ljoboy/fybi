@@ -7,7 +7,7 @@
         </div>
 
         <div class="card-body">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css" />
+            <link rel="stylesheet" href="{{asset('css/fullcalendar.min.css')}}" />
             <div id="calendar"></div>
 
         </div>
@@ -19,8 +19,8 @@
 
 @section('scripts')
     @parent
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js'></script>
+    <script src='{{asset('js/moment.min.js')}}'></script>
+    <script src='{{asset('js/fullcalendar.min.js')}}'></script>
     <script>
         $(document).ready(function() {
             // page is now ready, initialize the calendar...
